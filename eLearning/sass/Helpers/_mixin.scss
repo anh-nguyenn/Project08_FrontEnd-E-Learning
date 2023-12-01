@@ -1,0 +1,15 @@
+//with variables
+@mixin styleText($color, $fs, $fw){
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+@mixin styleButton($color, $bg-color, $border, $fs, $fw, $pd-y, $pd-x){
+    color: $color;
+    background-color: $bg-color;
+    border: solid 1px $border;
+    font-size: $fs;
+    font-weight: $fw;
+    padding:$pd-y $pd-x;
+    cursor: pointer;
+}
