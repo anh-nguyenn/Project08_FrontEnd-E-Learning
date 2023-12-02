@@ -1,6 +1,7 @@
 // HELPERS
 @import './Helpers/variables';
 @import './Helpers/mixin';
+@import './Helpers/extend';
 
 //Vendors
 
@@ -11,8 +12,10 @@
 //Layout
 @import './Layouts/header';
 @import './Layouts/header';
+@import './Layouts/intro';
 
 //Components
-@import './Components/button.sass';
+@import './Components/button';
+@import './Components/cover';
 
 //Pages

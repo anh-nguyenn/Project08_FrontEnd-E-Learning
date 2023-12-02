@@ -35,7 +35,7 @@
     <!-- HEADER -->
     <header>
       <nav class="myNavBar navbar navbar-expand-lg navbar-light">
-        <div class="col-7">
+        <div class="col-7 myNavBar__column">
           <div class="myNavBar__left">
             <a class="navbar-brand" href="#">
               <img src="./img/logo-coral.svg" alt="logo" />
@@ -67,23 +67,23 @@
                 <a class="nav-link" aria-current="page" href="#"
                   >Udemy for Business</a
                 >
-                <!-- <div class="overlay">
+                <div class="overlay">
                   <p>
                     Get your team access to Udemy’s top 2,500 courses anytime,
                     anywhere.
                   </p>
                   <a href="#">Try Udemy For Business</a>
-                </div> -->
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Become an Instructor</a>
-                <!-- <div class="overlay">
+                <div class="overlay">
                   <p>
                     Get your team access to Udemy’s top 2,500 courses anytime,
                     anywhere.
                   </p>
                   <a href="#">Try Udemy For Business</a>
-                </div> -->
+                </div>
               </li>
               <li class="nav-item myNavBar__cart">
                 <a class="nav-link" href="#">
@@ -104,10 +104,70 @@
     </header>
 
     <!-- COVER  -->
-    <section class="cover"></section>
+    <section class="cover">
+      <div class="cover__content">
+        <h1>Learn on your schedule</h1>
+        <p>
+          Study any topic, anytime. Explore thousands of courses for as low as
+          $19.99
+        </p>
+        <form class="cover__form" role="search">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="What do your want to learn honey?"
+            />
+            <div class="input-group-append">
+              <span class="input-group-text" id="basic-addon2">
+                <i class="fa fa-search"></i>
+              </span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
 
     <!-- INTRO  -->
-    <section class="intro"></section>
+    <section class="intro">
+      <div class="intro__content">
+        <div class="row">
+          <div class="col-4">
+            <div class="intro__items">
+              <div class="intro__icon">
+                <i class="fa fa-bullseye"></i>
+              </div>
+              <div class="intro__details">
+                <p>80,000 online courses</p>
+                <p>Explore a variety of fresh topics</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="intro__items">
+              <div class="intro__icon">
+                <i class="fa fa-spinner"></i>
+              </div>
+              <div class="intro__details">
+                <p>Expert instruction</p>
+                <p>Find the right instructor for you</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="intro__items">
+              <div class="intro__icon">
+                <i class="fa fa-sync-alt"></i>
+              </div>
+              <div class="intro__details">
+                <p>Lifetime access</p>
+                <p>Learn on your schedule</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- COURSES  -->
     <section class="courses"></section>
