@@ -310,6 +310,9 @@
   font-weight: normal;
 }
 
+.courses {
+  margin: 25px 0;
+}
 .courses .courses__content {
   width: 90%;
   margin: auto;
@@ -336,6 +339,55 @@
 .courses .courses__content #myTab .nav-link.active {
   border: none;
   border-bottom: 5px solid #007791;
+}
+
+.viewing {
+  padding: 22px 0;
+}
+.viewing .viewing__content {
+  width: 90%;
+  margin: 0 auto;
+}
+.viewing .viewing__content h2 {
+  font-size: 20px;
+}
+
+.banner {
+  background: url(../img/udemy-logo-semi-transparent.svg) 0/30% no-repeat, linear-gradient(61deg, #6e1a52, #76c5d6 41%);
+  text-align: center;
+  align-items: center;
+  display: flex;
+  height: 325px;
+  background-blend-mode: overlay;
+}
+.banner h2 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: normal;
+}
+.banner p {
+  color: #fff;
+  margin-bottom: 0;
+}
+.banner button {
+  margin: 10px 0;
+}
+
+.categories {
+  margin-top: 32px;
+}
+.categories .categories__content {
+  width: 90%;
+  margin: 0 auto;
+}
+.categories .categories__content h2 {
+  font-size: 24px;
+}
+.categories .categories__content .categories__items {
+  padding: 15px;
+  font-size: 18px;
+  border: 1px solid rgba(20, 23, 29, 0.1);
+  margin-bottom: 15px;
 }
 
 .button--white {
