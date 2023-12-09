@@ -13,6 +13,12 @@
             img{
                 width: 110px;
             }
+            .logo-black{
+                display: inline-block;
+            }
+            .logo-white{
+                display: none;
+            }
         }
         .myNavBar__categories{
             flex-grow: 1;
@@ -64,14 +70,13 @@
             //         }
             //     }
             // }
-            @include styleFormSearch($color-white-cream,$color-white-0,$color-gray-4);
+            @include styleFormSearch($color-white-cream,$color-white-0,$color-gray-4,$color-black-light);
         }
     }
     .myNavBar__right{
         .navbar-nav {
             justify-content: space-between;
             align-items: center;
-
             .nav-item{
                 padding: 7px 5px;
                 border-radius: $border-radius + 2;
@@ -94,6 +99,7 @@
                     position: absolute;
                     right: 0;
                     top: 60px;
+                    z-index: 1;
                     border-top: 1px solid $color-gray-1;
                     box-shadow: 0 4px 16px $color-gray-5;
                     &::before{

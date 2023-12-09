@@ -38,7 +38,16 @@
         <div class="col-xl-7 col-lg-9 col-md-8 col-sm-8 col-6 myNavBar__col">
           <div class="myNavBar__left">
             <a class="navbar-brand" href="#">
-              <img src="./img/logo-coral.svg" alt="logo" />
+              <img
+                class="logo-black"
+                src="./img/logo-coral.svg"
+                alt="logo black"
+              />
+              <img
+                class="logo-white"
+                src="./img/logo-coral-white.svg"
+                alt="logo white"
+              />
             </a>
             <div class="myNavBar__categories">
               <i class="fa fa-th"></i>
@@ -961,6 +970,23 @@
       </div>
     </footer>
 
+    <!-- SIDEBAR MINI -->
+    <div class="sidebarMini">
+      <button class="sidebarMini__button">
+        <i class="fa fa-cog"></i>
+      </button>
+      <div class="sidebarMini__content">
+        <h2>Dark Mode</h2>
+        <div class="d-flex">
+          <span>Off</span>
+          <label class="switch" for="checkbox">
+            <input type="checkbox" name="" id="checkbox" />
+            <div class="slider"></div>
+          </label>
+          <span>On</span>
+        </div>
+      </div>
+    </div>
     <!-- jquery  -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
