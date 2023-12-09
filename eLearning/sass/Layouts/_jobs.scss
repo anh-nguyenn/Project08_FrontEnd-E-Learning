@@ -11,4 +11,9 @@
             }
         }
     }
+    @include responsive("medium"){
+        .border-right{
+            border-right: none!important;
+        }
+    }
 }

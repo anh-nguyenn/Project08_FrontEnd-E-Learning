@@ -150,8 +150,57 @@
 .myNavBar .myNavBar__right .navbar-nav .myNavBar__cart .nav-link {
   font-size: 20px;
 }
+.myNavBar .myNavBar__right .navbar-nav .myNavBar_buttons {
+  display: flex;
+}
 .myNavBar .myNavBar__right .navbar-nav .myNavBar_buttons:hover {
   background-color: transparent;
+}
+.myNavBar .myNavBar__right .navbar-nav .myNavBar_buttons .button--white {
+  margin-right: 5px;
+}
+.myNavBar .myNavBar__right .navbar-nav .myNavBar_buttons .button {
+  white-space: nowrap;
+}
+@media screen and (min-width: 1200px) and (max-width: 1375px) {
+  .myNavBar .myNavBar__right .navbar-nav .nav-item {
+    white-space: nowrap;
+    text-align: center;
+  }
+  .myNavBar .myNavBar__right .navbar-nav .nav-item .nav-link {
+    font-size: 12px;
+  }
+  .myNavBar .myNavBar__right .navbar-nav .nav-item .overlay {
+    white-space: normal;
+  }
+  .myNavBar .myNavBar--reset {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .myNavBar .business,
+  .myNavBar .instructor {
+    display: none;
+  }
+  .myNavBar .myNavBar__right .navbar-nav {
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 768px) {
+  .myNavBar .myNavBar__left .myNavBar__categories,
+  .myNavBar .myNavBar__left .myNavBar__form-search {
+    display: none;
+  }
+  .myNavBar .myNavBar__right {
+    width: 50%;
+    margin-left: auto;
+  }
+  .myNavBar .myNavBar__right .navbar-nav {
+    text-align: center;
+  }
+  .myNavBar .myNavBar__right .navbar-nav .myNavBar__buttons {
+    display: none;
+  }
 }
 
 .intro {
@@ -184,6 +233,16 @@
   font-size: 15px;
   font-weight: normal;
 }
+@media screen and (max-width: 1200px) {
+  .intro .intro__content .intro__icon {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .intro {
+    display: none;
+  }
+}
 
 .courses {
   margin: 25px 0;
@@ -215,6 +274,19 @@
   border: none;
   border-bottom: 5px solid #007791;
 }
+@media screen and (max-width: 1350px) {
+  .courses .courses__content .card .card-body .card-title {
+    color: #29303b;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .courses .courses__content .courses__left {
+    padding: 20px;
+  }
+}
 
 .viewing {
   padding: 22px 0;
@@ -225,6 +297,14 @@
 }
 .viewing .viewing__content h2 {
   font-size: 20px;
+}
+@media screen and (max-width: 1350px) {
+  .viewing .viewing__content .card .card-body .card-title {
+    color: #29303b;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
 }
 
 .banner {
@@ -292,6 +372,29 @@
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 1200px) {
+  .partners .partners__content {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .partners .partners__content {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .partners .partners__content {
+    width: 60%;
+  }
+  .partners .partners__content .partners__imgs {
+    flex-wrap: wrap;
+  }
+  .partners .partners__content .partners__imgs .partners__items {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
 
 .jobs {
   background-color: #f7f8fa;
@@ -306,6 +409,11 @@
   color: #505763;
   font-size: 19px;
   font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  .jobs .border-right {
+    border-right: none !important;
+  }
 }
 
 footer {
@@ -390,6 +498,21 @@ footer .footer__bottom .nav-link {
   border: 1px solid #521822;
 }
 
+.button--dropup {
+  color: #686f7a;
+  background-color: #fff;
+  border: solid 1px #505763;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 7px 10px;
+  cursor: pointer;
+}
+.button--dropup:hover {
+  color: #29303b;
+  background-color: transparent;
+  border: 1px solid #29303b;
+}
+
 .cover {
   background-image: url(../img/cover.jpg);
   height: 500px;
@@ -446,6 +569,12 @@ footer .footer__bottom .nav-link {
 .cover .cover__form .input-group .input-group-text:hover {
   color: #fff;
   background-color: #ec5252;
+}
+@media screen and (max-width: 576px) {
+  .cover .cover__content {
+    max-width: 400px;
+    left: 10%;
+  }
 }
 
 .card {
