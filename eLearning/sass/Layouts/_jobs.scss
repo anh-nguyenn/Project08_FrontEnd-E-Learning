@@ -1,0 +1,14 @@
+.jobs{
+    background-color: #f7f8fa;
+    .jobs__content{
+        .jobs__items{
+            max-width: 450px;
+            margin: 0 auto;
+            text-align: center;
+            padding: $pd-3;
+            h2{
+                @include styleText(#505763,$fs-3+1,$fw-1);
+            }
+        }
+    }
+}
